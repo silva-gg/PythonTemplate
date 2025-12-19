@@ -1,0 +1,26 @@
+# Include documentation
+include README.md
+include CHANGELOG.md
+include LICENSE
+include CONTRIBUTING.md
+include DEVELOPMENT.md
+
+# Include package data
+recursive-include src/your_package *.py
+recursive-include src/your_package *.txt
+recursive-include src/your_package *.json
+
+# Include test files
+recursive-include tests *.py
+
+# Exclude compiled files
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude __pycache__
+global-exclude *.so
+global-exclude *.dylib
+
+# Exclude version control and IDE files
+global-exclude .git*
+global-exclude .vscode
+global-exclude .idea
